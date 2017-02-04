@@ -1,0 +1,58 @@
+.ast-widget-address {
+	.widget-address-field {
+	    width: 100%;
+	}
+	address {
+	    margin: 0;
+	}
+	.icon-wrap,
+	.address-meta {
+		display: inline-block;
+		vertical-align: top;	
+	}
+	.widget-address-field {
+    	margin-bottom: 10px;
+	}
+	.icon-wrap {
+	    margin: 0 5px 5px 0px;
+
+	    i {
+	    	vertical-align: middle;
+	    }
+	}
+	
+	.address-wrap {
+		display: inline;
+	}
+	.address-widget-label {
+		display: inline-block;
+		width: 100%;
+		font-weight: bold;
+	}
+
+	.astra-address-widget-map {
+		width: 100%;
+		height: 200px;
+	}
+}
+
+.widget-address-align-left {
+	.address-wrap {
+		display: inline-block;
+	}
+}
+
+/*	Css */
+@media all and ( min-width: 768px ) {
+	.widget-address-align-left {
+		text-align: left;
+	}
+
+	.widget-address-align-center {
+		text-align: center;
+	}
+
+	.widget-address-align-right {
+		text-align: right;
+	}
+}

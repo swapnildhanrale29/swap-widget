@@ -1,0 +1,20 @@
+.ast-widget-button-wrapper .ast-widget-button.outline a,
+.ast-widget-button-wrapper .ast-widget-button.fill a {
+  padding: 0 20px;
+}
+
+.ast-widget-button-wrapper .ast-widget-button.outline a {
+  border: 2px solid #FD0;
+}
+
+.ast-widget-button-wrapper .ast-widget-button.fill a {
+  background-color: #FD0;
+  border-color: #FD0;
+}
+
+.ast-widget-button-wrapper .ast-widget-button a {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 3em;
+  display: inline-block;
+}

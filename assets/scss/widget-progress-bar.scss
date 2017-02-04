@@ -1,0 +1,21 @@
+.ast-progress-name {
+    margin-bottom: 10px;
+}
+.ast-progress-val {
+	height: 10px;
+	background-color: #808285;
+	span {
+		height: 100%;
+		color: #fff;
+		text-align: right;
+		width: 0;
+		float: left;
+		background-color: #0099ff;
+	}
+}
+.ast-progress-bar-inner {
+    margin-bottom: 1.7em;
+}
+.ast-widget-progress-bar.widget h2.widget-title {
+	margin-bottom: 1em;
+}

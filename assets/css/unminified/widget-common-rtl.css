@@ -1,0 +1,83 @@
+/* Common */
+.help {
+  float: left;
+  position: relative;
+}
+
+.help:hover .info {
+  opacity: 1;
+  bottom: 160%;
+}
+
+.info {
+  position: absolute;
+  right: 0;
+  background: #FFFFFF;
+  padding: 10px 15px;
+  border: 1px solid #E5E5E5;
+  font-size: 12px;
+  line-height: normal;
+  font-family: sans-serif;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  bottom: 100%;
+  min-width: 300px;
+  background: white;
+  z-index: 9;
+}
+
+/* Widget Fields */
+.controls {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.repeater {
+  border: 1px solid #CECECE;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.repeater label {
+  margin: 10px 0 5px 0;
+  display: inline-block;
+}
+
+.repeater span {
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.repeater .add {
+  border-color: #006799;
+  background: #0085ba;
+  border-color: #0073aa #006799 #006799;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 #006799;
+  box-shadow: 0 1px 0 #006799;
+  color: #fff;
+  text-decoration: none;
+}
+
+.repeater .remove {
+  border-color: #B52020;
+  background: #FF4444;
+  border-color: #FF4444 #FF4444 #C72525;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 #C72525;
+  box-shadow: 0 1px 0 #C72525;
+  color: #fff;
+  text-decoration: none;
+}

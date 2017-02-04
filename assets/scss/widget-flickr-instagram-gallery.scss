@@ -1,0 +1,40 @@
+
+.ast-flickr-gallery,
+.ast-instagram-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 -1px;
+}
+.ast-flickr-image-wrap,
+.ast-instagram-image-wrap {
+	.ast-flickr-image,
+    .ast-instagram-image {
+	    padding: 1px;
+    }
+    .ast-flickr-gallery-1 &,
+    .ast-instagram-gallery-1 & {
+        width: 100%;
+    }
+    .ast-flickr-gallery-2 &,
+    .ast-instagram-gallery-2 & {
+    	width: 50%;
+    }
+    .ast-flickr-gallery-3 &,
+    .ast-instagram-gallery-3 & {
+    	width: 33.33%;
+    }
+    .ast-flickr-gallery-4 &,
+    .ast-instagram-gallery-4 & {
+    	width: 25%;
+    }
+    .ast-flickr-gallery-5 &,
+    .ast-instagram-gallery-5 & {
+    	width: 20%;
+    }
+    .ast-flickr-gallery-6 &,
+    .ast-instagram-gallery-6 & {
+    	width: 16.66%;
+    }
+
+}

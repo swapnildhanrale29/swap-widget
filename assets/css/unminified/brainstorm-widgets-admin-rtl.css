@@ -1,0 +1,196 @@
+/**
+ * 	Field - COMMON
+ */
+.ast-widget-field {
+  margin: 10px 0;
+}
+
+.ast-widget-field label {
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+/**
+ * 	Field - Spacing
+ */
+.ast-widget-field-spacing .spacing-field {
+  display: inline-block;
+  width: 24%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.ast-widget-field-spacing .spacing-field span {
+  border: 1px solid rgba(221, 221, 221, 0.52);
+  border-bottom: 0;
+  width: 97%;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #929292;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 2px 0px;
+}
+
+/**
+ * 	Field - Repeater
+ */
+.controls {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.repeater {
+  border: 1px solid #CECECE;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.repeater label {
+  margin: 10px 0 5px 0;
+  display: inline-block;
+}
+
+.repeater span {
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.repeater .add {
+  border-color: #006799;
+  background: #0085ba;
+  border-color: #0073aa #006799 #006799;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 #006799;
+  box-shadow: 0 1px 0 #006799;
+  color: #fff;
+  text-decoration: none;
+}
+
+.repeater .remove {
+  border-color: #B52020;
+  background: #FF4444;
+  border-color: #FF4444 #FF4444 #C72525;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 #C72525;
+  box-shadow: 0 1px 0 #C72525;
+  color: #fff;
+  text-decoration: none;
+}
+
+/**
+ *	Field - Radio Image
+ */
+.ast-widget-field-radio-image img {
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0 0 1px #ececec;
+  box-shadow: 0 0 1px #ececec;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.ast-widget-field-radio-image img:hover {
+  -webkit-box-shadow: 0 0 3px 1px #e8e8e8;
+  box-shadow: 0 0 3px 1px #e8e8e8;
+}
+
+.ast-widget-field-radio-image input[type=radio] {
+  position: absolute;
+  right: -9999px;
+}
+
+.ast-widget-field-radio-image input[type=radio] img.selected,
+.ast-widget-field-radio-image input[type=radio]:checked + label > img {
+  -webkit-box-shadow: 0 0 0px 2px #0073AA;
+  box-shadow: 0 0 0px 2px #0073AA;
+}
+
+/**
+ *	Field - Image Selector
+ */
+.ast-field-image .ast-select-image,
+.wp-core-ui .ast-field-image .ast-select-image {
+  padding: 4px 0;
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.ast-field-image-preview-inner {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding: 0px 0px;
+  background: #f1f1f1;
+}
+
+.ast-field-image-preview {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.ast-field-image-preview img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.ast-field-image-preview .ast-remove-image,
+.ast-field-image-preview .ast-remove-image:hover {
+  position: absolute;
+  background: #F2DEDE;
+  border-color: #B94A48;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  line-height: normal;
+  background-color: #F2DEDE;
+  cursor: pointer;
+  color: #B94A48;
+  padding: 0;
+  margin-bottom: 5px;
+  height: 2em;
+  left: 5px;
+  top: 5px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  width: 2em;
+}
+
+.ast-field-hide {
+  display: none;
+}
+
+/* Widget */
+.ast-widget-field-section {
+  background: #F1F1F1;
+  padding: 5px 10px;
+}
+
+.ast-widget-field-section span {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.ast-widget-field-section i {
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}

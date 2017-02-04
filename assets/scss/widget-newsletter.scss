@@ -1,0 +1,63 @@
+.ast-newsletter-wrapper {
+	.ast-success-msg,
+	.ast-error-msg {
+		display:none;
+		text-align:center;
+	}
+
+	.ast-input-error {
+		border: 1px solid red;
+		box-shadow: 0px 0px 5px 0px red;
+	}
+
+	.ast-input,
+	.ast-button {
+		margin-bottom: 10px;
+	}
+
+	&.ast-inline-name{
+	/* Inline Style with Name */
+		.ast-newsletter-form-input {
+			display: flex;
+	    	flex-wrap: wrap;
+		}
+
+		.ast-input-name {
+			width: calc(50% - 10px);
+			margin-right: 10px;
+		}
+
+		.ast-input-email {
+			width: 50%;
+		}
+
+		.ast-button{
+			width: 100%;
+		}
+	}
+
+	&.ast-inline{
+	/* Inline style without name */
+		.ast-newsletter-form-input {
+			display: flex;
+	    	flex-wrap: wrap;
+		}
+
+		.ast-input {
+			width: calc(65% - 10px);
+			margin-right: 10px;
+		}
+
+		.ast-button{
+			width: 35%;
+		}
+	}
+
+	&.ast-stacked-name,
+	&.ast-stacked {
+		input {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

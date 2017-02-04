@@ -1,0 +1,169 @@
+
+/**
+ * 	Field - COMMON
+ */
+.ast-widget-field {
+    margin: 10px 0;
+    label {
+    	margin-bottom: 3px;
+    	display: inline-block;
+	}
+}
+
+/**
+ * 	Field - Spacing
+ */
+.ast-widget-field-spacing .spacing-field {
+	display: inline-block;
+	width: 24%;
+	box-sizing: border-box;
+	text-align: center;
+	span {
+		border: 1px solid rgba(221, 221, 221, 0.52);
+	    border-bottom: 0;
+	    width: 97%;
+	    display: inline-block;
+	    font-size: 10px;
+	    font-weight: 600;
+	    color: #929292;
+	    border-top-right-radius: 4px;
+	    border-top-left-radius: 4px;
+	    padding: 2px 0px;
+	}
+}
+
+/**
+ * 	Field - Repeater
+ */
+.controls {
+    padding-top: 10px;
+    text-align: right;
+}
+.repeater {
+	border: 1px solid #CECECE;
+    padding: 10px;
+    margin: 10px 0;
+	label {
+	    margin: 10px 0 5px 0;
+	    display: inline-block;
+	}
+	span {
+		border: 1px solid #ccc;
+	    padding: 4px 10px;
+	    border-radius: 1px;
+	    display: inline-block;
+	    margin-left: 3px;
+	    cursor: pointer;
+	    font-family: sans-serif;
+	    font-size: 11px;
+	}
+	.add {
+	    border-color: #006799;
+	    background: #0085ba;
+	    border-color: #0073aa #006799 #006799;
+	    border-radius: 4px;
+	    box-shadow: 0 1px 0 #006799;
+	    color: #fff;
+	    text-decoration: none;
+	}
+	.remove {
+	    border-color: #B52020;
+	    background: #FF4444;
+	    border-color: #FF4444 #FF4444 #C72525;
+	    border-radius: 4px;
+	    box-shadow: 0 1px 0 #C72525;
+	    color: #fff;
+	    text-decoration: none;
+	}
+}
+
+/**
+ *	Field - Radio Image
+ */
+.ast-widget-field-radio-image {
+	img {
+	    max-width: 100%;
+	    width: 100%;
+		box-shadow: 0 0 1px #ececec;
+		transition: all ease-in-out 0.3s;
+		&:hover {
+			box-shadow: 0 0 3px 1px #e8e8e8;
+		}
+	}
+	input[type=radio] {
+		position: absolute;
+		left: -9999px;
+		img.selected,
+		&:checked + label > img {
+			box-shadow: 0 0 0px 2px #0073AA;
+		}
+	}
+}
+
+/**
+ *	Field - Image Selector
+ */
+.ast-field-image .ast-select-image,
+.wp-core-ui .ast-field-image .ast-select-image {
+	padding: 4px 0;
+	width: 100%;
+	text-align: center;
+	height: auto;
+}
+.ast-field-image-preview-inner {
+    display: inline-block;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding: 0px 0px;
+	background: #f1f1f1;
+}
+.ast-field-image-preview {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+	position: relative;
+   	
+    img {
+	    width: 100%;
+    	vertical-align: middle;
+	}
+	.ast-remove-image,
+	.ast-remove-image:hover {
+	    position: absolute;
+	    background: #F2DEDE;
+	    border-color: #B94A48;
+	    box-shadow: none;
+	    font-size: 12px;
+	    line-height: normal;
+	    background-color: #F2DEDE;
+    	cursor: pointer;
+	    color: #B94A48;
+	    padding: 0;
+	    margin-bottom: 5px;
+	    height: 2em;
+	    right: 5px;
+	    top: 5px;
+	    text-align: center;
+	    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	    width: 2em;
+	}
+}
+.ast-field-hide {
+	display: none;
+}
+
+/* Widget */
+.ast-widget-field-section {
+    background: #F1F1F1;
+    padding: 5px 10px;
+    span {
+	    font-weight: bold;
+	    font-size: 12px;
+	    text-transform: uppercase;
+	}
+	i {
+	    margin-right: 5px;
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+}
