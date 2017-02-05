@@ -11,9 +11,8 @@ Author URI: http://www.swapnildhanrale.com/
 License: GPL2
 */
 
-//define( 'AST_EXT_WIDGETS_DIR', AST_EXT_DIR . '/extensions/widgets/' );
-//define( 'AST_EXT_WIDGETS_URL', AST_EXT_URI . '/extensions/widgets/' );
-
+define( 'AST_EXT_WIDGETS_DIR', plugin_dir_path(__FIle__) );
+define( 'AST_EXT_WIDGETS_URL', plugin_dir_url(__File__));
 /**
  * AST_Ext_Widgets initial setup
  *
@@ -40,8 +39,8 @@ if( !class_exists('AST_Ext_Widgets') ) {
 		 * Constructor function that initializes required actions and hooks
 		 */
 		public function __construct() {
-
-			//require_once AST_EXT_WIDGETS_DIR . 'classes/functions.php';
+			add_theme_support( 'widget-address' );
+			require_once AST_EXT_WIDGETS_DIR . 'classes/functions.php';
 		}
 	}
 
