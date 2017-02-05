@@ -1,13 +1,13 @@
 <?php
 /**
- * AST_Ext_Widgets_Init initial setup
+ * SWAP_Widgets_Init initial setup
  *
  * @since 1.0.0
  */
 
-if( !class_exists('AST_Ext_Widgets_Init') ) {
+if( !class_exists('SWAP_Widgets_Init') ) {
 
-	class AST_Ext_Widgets_Init {
+	class SWAP_Widgets_Init {
 
 		private static $instance;
 		public static $branding;
@@ -17,7 +17,7 @@ if( !class_exists('AST_Ext_Widgets_Init') ) {
 		*/
 		public static function get_instance(){
 			if ( ! isset( self::$instance ) ) {
-				self::$instance = new AST_Ext_Widgets_Init();
+				self::$instance = new SWAP_Widgets_Init();
 			}
 			return self::$instance;
 		}
@@ -51,10 +51,10 @@ if( !class_exists('AST_Ext_Widgets_Init') ) {
 		function includes() {
 
 			// Common functions
-			require_once AST_EXT_WIDGETS_DIR . 'includes/extras.php';
+			require_once SWAP_WIDGETS_DIR . 'includes/extras.php';
 
 			// Theme hooks
-			require_once AST_EXT_WIDGETS_DIR . 'includes/theme-hooks.php';
+			require_once SWAP_WIDGETS_DIR . 'includes/theme-hooks.php';
 		}
 
 		/**
@@ -85,10 +85,10 @@ if( !class_exists('AST_Ext_Widgets_Init') ) {
 		function load_scripts() {
 
 			// Astra Icons for Widget
-			wp_enqueue_style( 'ast-widgets-icons-css', AST_EXT_WIDGETS_URL . 'assets/css/minified/astra-fonts.min.css' );
+			wp_enqueue_style( 'ast-widgets-icons-css', SWAP_WIDGETS_URL . 'assets/css/minified/astra-fonts.min.css' );
 			
-			wp_enqueue_style( 'ast-widgets-frontend-css', AST_EXT_WIDGETS_URL . 'assets/css/minified/widgets.min.css' );
-			wp_enqueue_script( 'ast-widgets-frontend-js', AST_EXT_WIDGETS_URL . 'assets/js/unminified/widgets-frontend.js', array( 'jquery' ) );
+			wp_enqueue_style( 'ast-widgets-frontend-css', SWAP_WIDGETS_URL . 'assets/css/minified/widgets.min.css' );
+			wp_enqueue_script( 'ast-widgets-frontend-js', SWAP_WIDGETS_URL . 'assets/js/unminified/widgets-frontend.js', array( 'jquery' ) );
 
 			$theme_color = AstWidgetsThemeHooks::$_theme_color;
 			$theme_color = array(
@@ -109,10 +109,10 @@ if( !class_exists('AST_Ext_Widgets_Init') ) {
 		function register_admin_scripts() {
 
 			// Astra Icons for Widget
-			wp_enqueue_style( 'ast-widgets-icons-css', AST_EXT_WIDGETS_URL . 'assets/css/minified/astra-fonts.min.css' );
+			wp_enqueue_style( 'ast-widgets-icons-css', SWAP_WIDGETS_URL . 'assets/css/minified/astra-fonts.min.css' );
 
-			wp_register_style(  'ast-widgets-backend-css', AST_EXT_WIDGETS_URL . 'admin/assets/css/minified/widgets-admin.min.css' );
-			wp_register_script( 'ast-widgets-backend-js', AST_EXT_WIDGETS_URL . 'assets/js/unminified/widgets-backend.js' );
+			wp_register_style(  'ast-widgets-backend-css', SWAP_WIDGETS_URL . 'admin/assets/css/minified/widgets-admin.min.css' );
+			wp_register_script( 'ast-widgets-backend-js', SWAP_WIDGETS_URL . 'assets/js/unminified/widgets-backend.js' );
 			wp_localize_script( 'ast-widgets-backend-js', 'ast_widgets', array(
 				'repeater_msg_confirm' => __( "Do you want to close?", 'astra' ),
 				'repeater_msg_error'   => __( "Could not removed. At least one item required.", 'astra' ),
@@ -148,4 +148,4 @@ if( !class_exists('AST_Ext_Widgets_Init') ) {
 /**
 *  Kicking this off by calling 'get_instance()' method
 */
-$AST_Ext_Widgets_Init = AST_Ext_Widgets_Init::get_instance();
+$SWAP_Widgets_Init = SWAP_Widgets_Init::get_instance();

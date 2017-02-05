@@ -324,10 +324,10 @@ if ( ! function_exists( 'register_astra_widget' ) ) {
 
 	function register_astra_widget( $widgetslug ) {
 
-		if ( current_theme_supports( $widgetslug ) && file_exists( AST_EXT_WIDGETS_DIR . 'classes/widgets/' . $widgetslug . '.php' ) ) {
+		if ( current_theme_supports( $widgetslug ) && file_exists( SWAP_WIDGETS_DIR . 'classes/widgets/' . $widgetslug . '.php' ) ) {
 
 			// include the widget file
-			include AST_EXT_WIDGETS_DIR . 'classes/widgets/' . $widgetslug . '.php';
+			include SWAP_WIDGETS_DIR . 'classes/widgets/' . $widgetslug . '.php';
 
 		}
 

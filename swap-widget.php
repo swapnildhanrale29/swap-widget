@@ -11,17 +11,17 @@ Author URI: http://www.swapnildhanrale.com/
 License: GPL2
 */
 
-define( 'AST_EXT_WIDGETS_DIR', plugin_dir_path(__FIle__) );
-define( 'AST_EXT_WIDGETS_URL', plugin_dir_url(__File__));
+define( 'SWAP_WIDGETS_DIR', plugin_dir_path(__FIle__) );
+define( 'SWAP_WIDGETS_URL', plugin_dir_url(__File__));
 /**
- * AST_Ext_Widgets initial setup
+ * SWAP_Widgets initial setup
  *
  * @since 1.0.0
  */
 
-if( !class_exists('AST_Ext_Widgets') ) {
+if( !class_exists('SWAP_Widgets') ) {
 
-	class AST_Ext_Widgets {
+	class SWAP_Widgets {
 
 		private static $instance;
 
@@ -40,13 +40,13 @@ if( !class_exists('AST_Ext_Widgets') ) {
 		 */
 		public function __construct() {
 			add_theme_support( 'widget-address' );
-			require_once AST_EXT_WIDGETS_DIR . 'classes/functions.php';
+			require_once SWAP_WIDGETS_DIR . 'classes/functions.php';
 		}
 	}
 
 	/**
 	*  Kicking this off by calling 'get_instance()' method
 	*/
-	$AST_Ext_Widgets = AST_Ext_Widgets::get_instance();
+	$SWAP_Widgets = SWAP_Widgets::get_instance();
 }
 
