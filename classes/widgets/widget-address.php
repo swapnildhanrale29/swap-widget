@@ -1,7 +1,7 @@
 <?php
 
-add_action( 'widgets_init', 'ast_widget_address' );
-function ast_widget_address() {
+add_action( 'widgets_init', 'swap_widget_address' );
+function swap_widget_address() {
 	register_widget( 'Ast_Widget_Address' );
 }
 class Ast_Widget_Address extends WP_Widget {
@@ -10,7 +10,7 @@ class Ast_Widget_Address extends WP_Widget {
 
 		$widget_ops  = array(
 			'classname' 	=> 'ast-widget-address',
-			'description' 	=> __( 'Display address.', 'astra' )
+			'description' 	=> __( 'Display address.', 'Swap' )
 		);
 		
 		$control_ops = array(
@@ -19,7 +19,7 @@ class Ast_Widget_Address extends WP_Widget {
 		
 		parent::__construct(
 			'ast-widget-address',
-			__( 'Astra: Address', 'astra' ),
+			__( 'Swap: Address', 'swap' ),
 			$widget_ops,
 			$control_ops
 		);
